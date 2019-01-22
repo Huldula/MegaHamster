@@ -1,0 +1,19 @@
+{
+    "name": "htl3r/megahamster",
+    "description": "MegaHamster Description",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Alex Mimü",
+            "email": "6150@htl.rennweg.at"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "HTL3R\\MegaHamster\\": "Classes/"
+        }
+    },
+    "require": {
+        "typo3fluid/fluid": "^2.5"
+    }
+}
