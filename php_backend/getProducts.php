@@ -8,7 +8,7 @@ use HTL3R\MegaHamster\Rooms\TheFlat;
 
 header('Content-Type: application/json');
 
-$response = new stdClass();
+//$response = new stdClass();
 
 $room = new TheRoom(80, 90, 100, 110);
 $room->setImageLocation('Images/flat.jpg');
@@ -17,8 +17,10 @@ $flat->setImageLocation('Images/flat.jpg');
 $pit = new ThePit(80, 90);
 $pit->setImageLocation('Images/flat.jpg');
 
-$response->flat = $flat->jsonSerialize();
-$response->room = $room->jsonSerialize();
-$response->pit = $pit->jsonSerialize();
+$rooms = [
+    $flat->jsonSerialize(),
+    $room->jsonSerialize(),
+    $pit->jsonSerialize()
+];
 
-echo json_encode($response);
+echo json_encode($rooms);

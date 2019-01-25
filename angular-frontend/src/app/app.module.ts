@@ -9,6 +9,7 @@ import { ProductsComponent } from './components/products/products.component';
 import { ImprintComponent } from './components/imprint/imprint.component';
 import { PrivacyComponent } from './components/privacy/privacy.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { RealEstateComponent } from './components/products/real-estate/real-estate.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     ProductsComponent,
     ImprintComponent,
     PrivacyComponent,
-    NavBarComponent
+    NavBarComponent,
+    RealEstateComponent
   ],
   imports: [
     BrowserModule,

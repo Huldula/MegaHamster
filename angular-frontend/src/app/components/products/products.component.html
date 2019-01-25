@@ -1,3 +1,5 @@
-<p>
-  products works!
-</p>
+<section class="m-3 row">
+  <app-real-estate class="col-sm-12 col-md-6 col-lg-4"
+                   *ngFor="let room of (rooms | async)" [room]="room">
+  </app-real-estate>
+</section>

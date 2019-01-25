@@ -1,6 +1,18 @@
-<nav class="flex-row ">
-  <a routerLink="/home">MegaHamster</a>
-  <a routerLink="/products">Produkte</a>
-  <a routerLink="/imprint">Impressum</a>
-  <a routerLink="/privacy">Datenschutz</a>
+<nav class="navbar sticky-top navbar-expand-md bg-dark navbar-dark">
+  <div class="navbar-collapse collapse w-100">
+    <ul class="navbar-nav w-100">
+      <li class="nav-item" [class.active]="location.path(false) === '/home'">
+        <a class="nav-link" routerLink="/home">MegaHamster</a>
+      </li>
+      <li class="nav-item" [class.active]="location.path(false) === '/products'">
+        <a class="nav-link" routerLink="/products">Produkte</a>
+      </li>
+      <li class="nav-item" [class.active]="location.path(false) === '/imprint'">
+        <a class="nav-link" routerLink="/imprint">Impressum</a>
+      </li>
+      <li class="nav-item" [class.active]="location.path(false) === '/privacy'">
+        <a class="nav-link" routerLink="/privacy">Datenschutz</a>
+      </li>
+    </ul>
+  </div>
 </nav>
