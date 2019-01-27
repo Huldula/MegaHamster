@@ -9,11 +9,11 @@ use HTL3R\MegaHamster\Rooms\TheRoom;
 $view = new \TYPO3Fluid\Fluid\View\TemplateView();
 
 $room = new TheRoom(80, 90, 100, 110);
-$room->setImageLocation('../Images/flat.jpg');
+$room->setImageLocation('/api/Images/flat.jpg');
 $flat = new TheFlat(80, 90, 100, 111);
-$flat->setImageLocation('../Images/flat.jpg');
+$flat->setImageLocation('/api/Images/flat.jpg');
 $pit = new ThePit(80, 90);
-$pit->setImageLocation('../Images/flat.jpg');
+$pit->setImageLocation('/api/Images/flat.jpg');
 
 $view->assignMultiple([
     'title' => 'MegaHamster',

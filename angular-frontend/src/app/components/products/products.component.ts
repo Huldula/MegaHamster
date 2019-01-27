@@ -17,5 +17,4 @@ export class ProductsComponent implements OnInit {
   ngOnInit() {
     this.rooms = this.data.getProducts();
   }
-
 }

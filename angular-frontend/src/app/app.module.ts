@@ -10,6 +10,7 @@ import { ImprintComponent } from './components/imprint/imprint.component';
 import { PrivacyComponent } from './components/privacy/privacy.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { RealEstateComponent } from './components/products/real-estate/real-estate.component';
+import { ServerRenderedComponent } from './components/server-rendered/server-rendered.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { RealEstateComponent } from './components/products/real-estate/real-esta
     ImprintComponent,
     PrivacyComponent,
     NavBarComponent,
-    RealEstateComponent
+    RealEstateComponent,
+    ServerRenderedComponent
   ],
   imports: [
     BrowserModule,
