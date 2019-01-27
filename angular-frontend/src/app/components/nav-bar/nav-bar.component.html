@@ -1,20 +1,30 @@
-<nav class="navbar sticky-top navbar-expand-md bg-dark navbar-dark">
-  <div class="navbar-collapse collapse w-100">
+<nav class="navbar" id="bar">
+  <div class="h-100">
     <ul class="navbar-nav w-100">
       <li class="nav-item" [class.active]="location.path(false) === '/home'">
-        <a class="nav-link" routerLink="/home">MegaHamster</a>
+        <a class="nav-link" routerLink="/home">
+          <img src="assets/home.svg">
+        </a>
       </li>
       <li class="nav-item" [class.active]="location.path(false) === '/products'">
-        <a class="nav-link" routerLink="/products">Produkte</a>
+        <a class="nav-link" routerLink="/products">
+          <img src="assets/shopping-cart.svg">
+        </a>
       </li>
       <li class="nav-item" [class.active]="location.path(false) === '/server-rendered'">
-        <a class="nav-link" routerLink="/server-rendered">Server Rendered</a>
+        <a class="nav-link" routerLink="/server-rendered">
+          <img src="assets/server.svg">
+        </a>
       </li>
       <li class="nav-item" [class.active]="location.path(false) === '/imprint'">
-        <a class="nav-link" routerLink="/imprint">Impressum</a>
+        <a class="nav-link" routerLink="/imprint">
+          <img src="assets/home.svg">
+        </a>
       </li>
       <li class="nav-item" [class.active]="location.path(false) === '/privacy'">
-        <a class="nav-link" routerLink="/privacy">Datenschutz</a>
+        <a class="nav-link" routerLink="/privacy">
+          <img src="assets/home.svg">
+        </a>
       </li>
     </ul>
   </div>
