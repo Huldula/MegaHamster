@@ -1,17 +1,23 @@
 @import "~bootstrap/scss/bootstrap";
-
-
+@import url('https://fonts.googleapis.com/css?family=Exo:900|Quicksand:700');
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-$color-standart: cornflowerblue;
-$color-background-main: #000;
+$color-standard: cornflowerblue;
+$color-background-main: #1a1e23;
 $color-background-nav: #2a2e35;
 $color-icons: #7a7e92;
 
 $nav-width: 70px;
 
+$max-width-mobile: 600px;
+
 body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
   background: $color-background-main;
+}
+
+h1 {
+  font-family: "Exo", sans-serif;
 }

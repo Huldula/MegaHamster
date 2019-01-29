@@ -1,16 +1,14 @@
 section {
+  width: 100%;
   color: white;
   padding: 30px;
 
-  display: flex;
-  flex-direction: row;
-
   #title {
-    font-size: 90px;
+    //max-font-size: 90px;
+    //min-font-size: 20px;
   }
 
   p {
-    margin: 30px;
   }
 
   #title-img {
