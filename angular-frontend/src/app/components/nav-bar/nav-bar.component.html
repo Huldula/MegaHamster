@@ -1,31 +1,22 @@
 <nav class="navbar" id="bar">
-  <div class="h-100">
-    <ul class="navbar-nav w-100">
-      <li class="nav-item" [class.active]="location.path(false) === '/home'">
-        <a class="nav-link" routerLink="/home">
-          <img src="assets/home.svg">
-        </a>
-      </li>
-      <li class="nav-item" [class.active]="location.path(false) === '/products'">
-        <a class="nav-link" routerLink="/products">
-          <img src="assets/shopping-cart.svg">
-        </a>
-      </li>
-      <li class="nav-item" [class.active]="location.path(false) === '/server-rendered'">
-        <a class="nav-link" routerLink="/server-rendered">
-          <img src="assets/server.svg">
-        </a>
-      </li>
-      <li class="nav-item" [class.active]="location.path(false) === '/imprint'">
-        <a class="nav-link" routerLink="/imprint">
-          <img src="assets/home.svg">
-        </a>
-      </li>
-      <li class="nav-item" [class.active]="location.path(false) === '/privacy'">
-        <a class="nav-link" routerLink="/privacy">
-          <img src="assets/home.svg">
-        </a>
-      </li>
-    </ul>
-  </div>
+  <!--<a class="nav-link" routerLink="/home" placement="right" [ngbTooltip]="tiphome">-->
+  <a class="nav-link item" routerLink="/home">
+    <!--<ng-template #tiphome style="color: red">Home</ng-template>-->
+    <i class="material-icons">home</i>
+    <span class="my-tooltip">
+      Home
+    </span>
+  </a>
+  <a class="nav-link item" routerLink="/products">
+    <i class="material-icons">shopping_cart</i>
+    <span class="my-tooltip">
+      Shopping Cart
+    </span>
+  </a>
+  <a class="nav-link item" routerLink="/server-rendered">
+    <i class="material-icons">dns</i>
+    <span class="my-tooltip">
+      Server Rendered
+    </span>
+  </a>
 </nav>

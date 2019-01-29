@@ -4,3 +4,14 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+$color-standart: cornflowerblue;
+$color-background-main: #000;
+$color-background-nav: #2a2e35;
+$color-icons: #7a7e92;
+
+$nav-width: 70px;
+
+body {
+  background: $color-background-main;
+}

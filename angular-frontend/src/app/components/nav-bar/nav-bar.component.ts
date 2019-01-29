@@ -11,6 +11,7 @@ export class NavBarComponent implements OnInit {
   constructor(public location: Location) { }
 
   ngOnInit() {
+    // document.getElementById('homesvg').style.stroke = 'blue';
   }
 
 }

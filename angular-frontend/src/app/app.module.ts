@@ -11,6 +11,7 @@ import { PrivacyComponent } from './components/privacy/privacy.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { RealEstateComponent } from './components/products/real-estate/real-estate.component';
 import { ServerRenderedComponent } from './components/server-rendered/server-rendered.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ServerRenderedComponent } from './components/server-rendered/server-ren
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

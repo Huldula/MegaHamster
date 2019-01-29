@@ -1,0 +1,19 @@
+section {
+  color: white;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: row;
+
+  #title {
+    font-size: 90px;
+  }
+
+  p {
+    margin: 30px;
+  }
+
+  #title-img {
+    //width: 45%;
+  }
+}
