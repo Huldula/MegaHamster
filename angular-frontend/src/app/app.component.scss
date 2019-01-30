@@ -3,7 +3,7 @@
 
 #main {
   height: 100%;
-  width: calc(100%);
+  width: calc(100% - #{$nav-width});
   margin-left: $nav-width;
   margin-top: 0;
 
