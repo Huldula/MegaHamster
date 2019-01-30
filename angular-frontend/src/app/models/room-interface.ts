@@ -7,4 +7,5 @@ export interface Room {
   specialEquipment?: [];
   imgPath: string;
   description: string;
+  info: string;
 }

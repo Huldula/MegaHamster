@@ -23,10 +23,16 @@ class ThePit extends SpecialRoom implements JsonSerializable
         // return $this->getJson();
     }
 
+    public function outputGeneralInfo(): string
+    {
+        return "Our Domain 'The Pit' is the basic choice of real estate for a hamster owner who wants variety. " .
+            "It is a hexagonal home for your hexagonal hamster!";
+    }
+
     
     public function jsonSerialize(): array
     {
-        $jsonArray['name'] = 'ThePit';
+        $jsonArray['name'] = 'The Pit';
         $jsonArray['price'] = $this->price;
         $jsonArray['width'] = parent::getWidth();
         $jsonArray['height'] = parent::getHeight();
@@ -34,6 +40,7 @@ class ThePit extends SpecialRoom implements JsonSerializable
         $jsonArray['specialEquipment'] = $this->specialEquipment;
         $jsonArray['imgPath'] = $this->getImageLocation();
         $jsonArray['description'] = $this->outputProductInfo();
+        $jsonArray['info'] = $this->outputGeneralInfo();
         return $jsonArray;
     }
 }

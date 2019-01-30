@@ -4,7 +4,12 @@
     <h1 id="title">MegaHamster</h1>
     <p>
       Every hamster owner needs a home for their hamster!
-      MegaHamster provides the real estate for your hamster!
+      MegaHamster provides what you need!
     </p>
+  </div>
+  <div class="w-100 row">
+    <app-real-estate class="col-sm-12 col-md-6 col-lg-4"
+                     *ngFor="let room of (rooms | async)" [room]="room">
+    </app-real-estate>
   </div>
 </section>

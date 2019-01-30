@@ -50,6 +50,12 @@ abstract class RealEstate implements Room
         return $out;
     }
 
+    public function outputGeneralInfo(): string
+    {
+        $out = '';
+        return $out;
+    }
+
     public function getImageLocation() 
     {
         return $this->imageLocation;

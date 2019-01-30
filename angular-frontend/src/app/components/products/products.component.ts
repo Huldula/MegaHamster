@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {DataService} from '../../services/date-service/data.service';
+import {DataService} from '../../services/data-service/data.service';
 import {Observable} from 'rxjs';
 import {Room} from '../../models/room-interface';
 
@@ -10,11 +10,8 @@ import {Room} from '../../models/room-interface';
 })
 export class ProductsComponent implements OnInit {
 
-  public rooms: Observable<Room[]>;
-
-  constructor(private data: DataService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.rooms = this.data.getProducts();
   }
 }

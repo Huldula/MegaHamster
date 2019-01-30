@@ -18,8 +18,8 @@ $pit = new ThePit(80, 90);
 $pit->setImageLocation('Images/flat.jpg');
 
 $rooms = [
-    $flat->jsonSerialize(),
     $room->jsonSerialize(),
+    $flat->jsonSerialize(),
     $pit->jsonSerialize()
 ];
 

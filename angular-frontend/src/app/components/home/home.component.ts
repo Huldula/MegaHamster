@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {DataService} from '../../services/data-service/data.service';
+import {Observable} from 'rxjs';
+import {Room} from '../../models/room-interface';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  public rooms: Observable<Room[]>;
+
+  constructor(private data: DataService) { }
 
   ngOnInit() {
+    this.rooms = this.data.getProducts();
   }
 
 }

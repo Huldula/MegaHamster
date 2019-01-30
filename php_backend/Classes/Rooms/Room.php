@@ -10,5 +10,6 @@ interface Room {
     public function getWidth(): float;
     public function getLength(): float;
     public function basicOutputInfo(): string;
+    public function outputGeneralInfo(): string;
     public function calculateArea(): float;
 }

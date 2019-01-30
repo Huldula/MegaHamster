@@ -14,10 +14,16 @@ class TheFlat extends SpecialRoom implements JsonSerializable
     {
         return "Our Domain 'The Flat' is the advanced choice of real estate for a hamster owner with a lot of experience. " . $this->basicOutputInfo();
     }
+
+    public function outputGeneralInfo(): string
+    {
+        return "Our Domain 'The Flat' is the advanced choice of real estate for a hamster owner with a lot of experience. " .
+            "It features special equipment for your luxurious hamster!";
+    }
     
     public function jsonSerialize(): array
     {
-        $jsonArray['name'] = 'TheFlat';
+        $jsonArray['name'] = 'The Flat';
         $jsonArray['price'] = $this->price;
         $jsonArray['width'] = parent::getWidth();
         $jsonArray['height'] = parent::getHeight();
@@ -25,6 +31,7 @@ class TheFlat extends SpecialRoom implements JsonSerializable
         $jsonArray['specialEquipment'] = $this->specialEquipment;
         $jsonArray['imgPath'] = $this->getImageLocation();
         $jsonArray['description'] = "Our Domain ‘The Flat’ is the best choice of real estate for a hamster owner. It features a length of " . parent::getLength() . "cm, a width of ". parent::getWidth() ."cm and a height of ". parent::getHeight() ." cm. It is available for the low price of EUR". $this->price .",-";
+        $jsonArray['info'] = $this->outputGeneralInfo();
         return $jsonArray;
     }
 }
