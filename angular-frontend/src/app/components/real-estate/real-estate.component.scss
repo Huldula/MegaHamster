@@ -1,0 +1,15 @@
+@import "../../../styles";
+
+#card {
+  background-color: $color-background-sec;
+  color: white;
+
+  img {
+    width: 80%;
+  }
+
+  button {
+    background-color: $color-standard;
+    float: right;
+  }
+}

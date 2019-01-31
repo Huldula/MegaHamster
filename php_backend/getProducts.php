@@ -11,11 +11,11 @@ header('Content-Type: application/json');
 //$response = new stdClass();
 
 $room = new TheRoom(80, 90, 100, 110);
-$room->setImageLocation('Images/theroom.jpg');
+$room->setImageLocation('Images/theroom.png');
 $flat = new TheFlat(80, 90, 100, 111);
-$flat->setImageLocation('Images/theflat.jpg');
+$flat->setImageLocation('Images/theflat.png');
 $pit = new ThePit(80, 90);
-$pit->setImageLocation('Images/thepit.jpg');
+$pit->setImageLocation('Images/thepit.png');
 
 $rooms = [
     $room->jsonSerialize(),

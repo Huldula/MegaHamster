@@ -1,3 +1,5 @@
+@import "../../../styles";
+
 section {
   width: 100%;
   color: white;
@@ -6,6 +8,7 @@ section {
   #title {
     //max-font-size: 90px;
     //min-font-size: 20px;
+    color: $color-standard;
   }
 
   p {
